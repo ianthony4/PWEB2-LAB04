@@ -14,12 +14,12 @@ class Picture:
   def verticalMirror(self):
     """ Devuelve el espejo vertical de la imagen """
     """ La solucion anteiror estaba erronea, esa solucion era la 'HorizontalMirror'"""
-    selfReversed = []
+    selfReversed = [] #La imagen nueva
     index = len(self.img) - 1
     """ Recorremos el arreglo imagen desde atras hacia adelante y lo vamos agregando al 'selfreversed'"""
     while(index >= 0):
-          selfReversed.append(self.img[index])
-          index = index - 1
+          selfReversed.append(self.img[index]) #Vamos agregando
+          index = index - 1 #recueindo index
     return Picture(selfReversed)
   
   def horizontalMirror(self):
