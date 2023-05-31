@@ -29,8 +29,8 @@ class Picture:
   def negative(self):
     """ Devuelve un negativo de la imagen """
     selfNegative = []
-    line = '' #Utilizaremos para recorrer linea por linea
     for x in self.img: # Bucle anidado
+      line = '' #Utilizaremos para recorrer linea por linea
       for j in x:
         line = line + self._invColor(j) #Invirtiendo color
       selfNegative.append(line) #Agregando cada linea a la imagen
