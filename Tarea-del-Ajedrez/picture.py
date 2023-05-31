@@ -30,10 +30,10 @@ class Picture:
     """ Devuelve un negativo de la imagen """
     selfNegative = []
     line = '' #Utilizaremos para recorrer linea por linea
-    for x in self.img:
+    for x in self.img: # Bucle anidado
       for j in x:
-        line = line + self._invColor(j)
-      selfNegative.append(line)
+        line = line + self._invColor(j) #Invirtiendo color
+      selfNegative.append(line) #Agregando cada linea a la imagen
     return Picture(selfNegative)
 
   def join(self, p):
