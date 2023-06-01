@@ -47,7 +47,7 @@ class Picture:
       selfUp.append(line)
     for line in self.img: # Recorriendo la segunda imagen (base)
       selfUp.append(line)
-    return Picture(selfUp) # Retorno la imagen
+    return Picture(selfUp) # Retorno la imagen (Funciona)
 
   def under(self, p):
     """ Devuelve una nueva figura poniendo la figura p sobre la
