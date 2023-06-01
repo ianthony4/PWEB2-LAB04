@@ -42,6 +42,9 @@ class Picture:
     return Picture(None)
 
   def up(self, p):
+    selfUp = [] # La nueva imagen doble
+    for line in p.img: # Añadimos la imagen que ira arriba
+      selfUp.append(line)
     return Picture(None)
 
   def under(self, p):
