@@ -58,8 +58,8 @@ class Picture:
     selftVertical = []
     for i in range(n):
       for j in self.img:
-            
-    return Picture(None)
+        selftVertical.append(j)
+    return Picture(serlVertical)
 
   #Extra: Sólo para realmente viciosos 
   def rotate(self):
