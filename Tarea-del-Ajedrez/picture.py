@@ -24,7 +24,12 @@ class Picture:
   
   def horizontalMirror(self):
     """ Devuelve el espejo horizontal de la imagen """
-    return Picture(None)
+    selfHorizontal = []
+    """ Recorremos la cantidad de elementos de la lista"""
+    for i in self.img:
+      
+
+    return Picture(selfHorizontal)
 
   def negative(self):
     """ Devuelve un negativo de la imagen """
