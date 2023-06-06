@@ -13,10 +13,10 @@ class Picture:
   #Funciona
   def verticalMirror(self):
     """ Devuelve el espejo vertical de la imagen """
-    """ La solucion anteiror estaba erronea, esa solucion era la 'HorizontalMirror'"""
+    #La solucion anteiror estaba erronea, esa solucion era la 'HorizontalMirror'
     selfReversed = [] #La imagen nueva
     index = len(self.img) - 1
-    """ Recorremos el arreglo imagen desde atras hacia adelante y lo vamos agregando al 'selfreversed'"""
+    #Recorremos el arreglo imagen desde atras hacia adelante y lo vamos agregando al 'selfreversed'
     while(index >= 0):
           selfReversed.append(self.img[index]) #Vamos agregando
           index = index - 1 #recueindo index
@@ -27,12 +27,12 @@ class Picture:
     laImagen = self.img
     selfHorizontal = []
     longitudFicha = len(laImagen)
-    """ Recorremos la cantidad de elementos de la lista"""
+    #Recorremos la cantidad de elementos de la lista
     for i in laImagen:
-      """ Este elemento representa un caracter"""
+      #Este elemento representa un caracter
       elemento = ""
-      """Aqui recorreremos desde el 57 hasta el 0 bajando de 1 en 1"""
-      """En java seria: for(int i = longitudFicha - 1; i >= 0; i--)"""
+      #Aqui recorreremos desde el 57 hasta el 0 bajando de 1 en 1
+      #En java seria: for(int i = longitudFicha - 1; i >= 0; i--)
       for j in range(longitudFicha - 1, -1 , -1):
         #Recorriendo todos los caracteres de atras hacia adelante
         elemento += i[j]
