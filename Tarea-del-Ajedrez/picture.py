@@ -24,10 +24,11 @@ class Picture:
   
   def horizontalMirror(self):
     """ Devuelve el espejo horizontal de la imagen """
+    laImagen = self.img
     selfHorizontal = []
-    longitudFicha = len(self.img)
+    longitudFicha = len(laImagen)
     """ Recorremos la cantidad de elementos de la lista"""
-    for i in self.img:
+    for i in laImagen:
       """ Este elemento representa un caracter"""
       elemento = ""
     return Picture(selfHorizontal)
