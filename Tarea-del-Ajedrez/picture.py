@@ -73,9 +73,9 @@ class Picture:
     return Picture(None)
   #Funciona
   def verticalRepeat(self, n):
-    selfVertical = []
-    for i in range(n):
-      for j in self.img:
+    selfVertical = [] #Nueva imagen
+    for i in range(n): #La cantidad de veces que se repetira
+      for j in self.img: # Añadiendo los caracteres a la nueva imagen
         selfVertical.append(j)
     return Picture(selfVertical)
 
