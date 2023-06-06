@@ -71,6 +71,7 @@ class Picture:
         figura actual """
     return Picture(None)
   
+  #Funciona
   def horizontalRepeat(self, n):
     """ Devuelve una nueva figura repitiendo la figura actual al costado
         la cantidad de veces que indique el valor de n """
