@@ -34,7 +34,9 @@ class Picture:
       """Aqui recorreremos desde el 57 hasta el 0 bajando de 1 en 1"""
       """En java seria: for(int i = longitudFicha - 1; i >= 0; i--)"""
       for j in range(longitudFicha - 1, -1 , -1):
-        
+        #Recorriendo todos los caracteres de atras hacia adelante
+        elemento += i[j]
+      selfHorizontal.append(elemento)
     return Picture(selfHorizontal)
 
   def negative(self):
