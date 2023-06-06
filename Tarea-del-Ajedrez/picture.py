@@ -31,6 +31,10 @@ class Picture:
     for i in laImagen:
       """ Este elemento representa un caracter"""
       elemento = ""
+      """Aqui recorreremos desde el 57 hasta el 0 bajando de 1 en 1"""
+      """En java seria: for(int i = longitudFicha - 1; i >= 0; i--)"""
+      for j in range(longitudFicha - 1, -1 , -1):
+        
     return Picture(selfHorizontal)
 
   def negative(self):
