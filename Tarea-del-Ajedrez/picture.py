@@ -10,6 +10,7 @@ class Picture:
     if color not in inverter:
       return color
     return inverter[color]
+  
   #Funciona
   def verticalMirror(self):
     """ Devuelve el espejo vertical de la imagen """
@@ -21,6 +22,7 @@ class Picture:
           selfReversed.append(self.img[index]) #Vamos agregando
           index = index - 1 #recueindo index
     return Picture(selfReversed)
+  
   #Funciona
   def horizontalMirror(self):
     """ Devuelve el espejo horizontal de la imagen """
@@ -38,6 +40,7 @@ class Picture:
         elemento += i[j]
       selfHorizontal.append(elemento)
     return Picture(selfHorizontal)
+  
   #Funciona
   def negative(self):
     """ Devuelve un negativo de la imagen """
@@ -53,6 +56,7 @@ class Picture:
     """ Devuelve una nueva figura poniendo la figura del argumento 
         al lado derecho de la figura actual """
     return Picture(None)
+  
   #Funciona
   def up(self, p):
     selfUp = [] # La nueva imagen doble
@@ -71,6 +75,7 @@ class Picture:
     """ Devuelve una nueva figura repitiendo la figura actual al costado
         la cantidad de veces que indique el valor de n """
     return Picture(None)
+  
   #Funciona
   def verticalRepeat(self, n):
     selfVertical = [] #Nueva imagen
