@@ -77,6 +77,8 @@ class Picture:
     selfHorizonalRepeat = [] #Resultado
     laImagen = self.img
     for i in laImagen:
+      for j in range(n):
+        
     return Picture(None)
   
   #Funciona
