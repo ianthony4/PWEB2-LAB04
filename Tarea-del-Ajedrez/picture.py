@@ -77,11 +77,11 @@ class Picture:
     selfHorizonalRepeat = [] #Resultado
     laImagen = self.img
     for i in laImagen:
-      elemento = ""
+      elemento = "" # Podriamos decir que cada elemento es una LINEA
       for j in range(n):
-        elemento += i
+        elemento += i # Aumentando y duplicando las lineas
       selfHorizonalRepeat.append(elemento)
-    return Picture(None)
+    return Picture(selfHorizonalRepeat)
   
   #Funciona
   def verticalRepeat(self, n):
