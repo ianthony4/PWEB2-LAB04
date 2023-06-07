@@ -78,6 +78,7 @@ class Picture:
   def under(self, p):
     """ Devuelve una nueva figura poniendo la figura p sobre la
         figura actual """
+    #Convirtiendo under.java en una funcion pero adapatada a python
     return Picture(None)
   
   #Funciona
