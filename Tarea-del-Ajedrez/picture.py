@@ -149,5 +149,24 @@ class Picture:
   def rotate(self):
     """Devuelve una figura rotada en 90 grados, puede ser en sentido horario
     o antihorario"""
-    return Picture(None)
+    laImagen = self.img
+    selfRotate = []
+    #Considerando que la figura es igual de larga en cada linea
+    #Caso contrario, seria otro for EXTERIOR que modifique en cada iteracion esa longitud
+    elementosLinea = len(laImagen[0])
+    #Elementos (lineas) en el dibujo
+    elementos = len(laImagen)
+    #Linea aux
+    line = ""
+    #Basicamente este ciclo recorre todas las lineas
+    #De esa forma extraemos caracter por caracter y lo colocamos en la nueva imagen
+    for i in range(elementosLinea):
+      for j in range(elementos):
+        line += laImagen[j][i:i+1] #Usando slicing
+      #Agregamos la linea
+      selfRotate.append(line)
+      #Reiniciamos la linea
+      line = ""
+
+    return Picture(selfRotate)
 
