@@ -73,5 +73,9 @@ whites = lineFiguresWhite.up(linePawnWhite)
 blacks = linePawnBlack.up(lineFiguresBlack)
 #La estructura que va en medio es 'quadLineSquare' ya esta creada en la linea 57
 
+""" CREACION DEL TABLERO """
+
+tablero = whites.up(quadLineSquare).up(blacks) #blancas +  mitad  + negras
+
 # Imprimimos
 draw(lineFiguresWhite)
