@@ -55,6 +55,10 @@ class Picture:
   def join(self, p):
     """ Devuelve una nueva figura poniendo la figura del argumento 
         al lado derecho de la figura actual """
+    laImagen = self.img #Esta es la imagen original (izquierda)
+    laImagenAdicional = p.img #Esta es la imagen que se añadira (derecha)
+    selfJoin = [] # El resultado
+    
     return Picture(None)
   
   #Funciona
