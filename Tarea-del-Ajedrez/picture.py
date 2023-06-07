@@ -88,13 +88,21 @@ class Picture:
     #Limite
     totalCaracteres = len(fondo) * len(fondo[0])
     aux = 0
+    #Este ciclo almacena lo indicado usando 'SLICING [x:y]' para cada linea
     for i in len(fondo):
       for j in len(fondo[i]):
         #En vez de SUBSTRING de java se usara SLICING de python
         charFondo[aux] = fondo[i][j:j+1]
         charFrontal[aux] = frontal[i][j:j+1]
         ++aux
-
+    
+    #Representamos una linea
+    line = ""
+    #Hacemos una comparacion de los elementos de los caracteres
+    #1. Si en la imagen frontal esta vacia (" ") en cierto indice,
+    #   colocamos el elemento del fondo en ese mismo indice en la linea
+    #   caso contrario, agregamos ese elemento del frontal en la linea
+    #2. Se uso MODULOS para controlar las lineas y agragerlas como elemento en el nuevo arreglo
 
     return Picture(None)
   
