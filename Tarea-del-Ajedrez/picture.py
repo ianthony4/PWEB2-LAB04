@@ -75,7 +75,7 @@ class Picture:
       selfUp.append(line)
     return Picture(selfUp) # Retorno la imagen (Funciona)
 
-  #Probando funcion
+  #Funciona
   def under(self, p):
     """ Devuelve una nueva figura poniendo la figura p sobre la
         figura actual """
