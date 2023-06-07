@@ -153,6 +153,11 @@ class Picture:
     selfRotate = []
     #Considerando que la figura es igual de larga en cada linea
     #Caso contrario, seria otro for EXTERIOR que modifique en cada iteracion esa longitud
+    elementosLinea = len(laImagen[0])
+    #Elementos (lineas) en el dibujo
+    elementos = len(laImagen)
+    #Linea aux
+    line = ""
     
     return Picture(None)
 
