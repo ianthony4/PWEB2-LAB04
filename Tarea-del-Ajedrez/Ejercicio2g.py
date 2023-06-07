@@ -13,16 +13,16 @@ from chessPictures import *
 """CREACIÓN DE LA FILA DE FIGURAS (CON SU SQUARE)"""
 
 #Modulo de Figuras
-figuras = [rock,knight,bishop,queen,king,bishop,knight,rock]
+figures = [rock,knight,bishop,queen,king,bishop,knight,rock]
 # Creacion de la primera linea
-primeraLinea = []
+firstLine = []
 # Ciclo que creara la linea de figuras y cuadrados por debajo
 
-for i in range(len(figuras)):
+for i in range(len(figures)):
     if i%2 == 0:
-        primeraLinea.append(square.under(figuras[i].negative()))
+        firstLine.append(square.negative().under(figures[i]))
     else:
-        primeraLinea.append(square.negative().under(figuras[i].negative()))
+        firstLine.append(square.under(figures[i]))
 
 #Metodo que recolecta en una sola variable la linea
 def imprimir(arr):
@@ -33,7 +33,7 @@ def imprimir(arr):
             output = arr[i]
     return output
 #Recolectamos en una variable picture
-firstLine = imprimir(primeraLinea)
+lineFiguresWhite= imprimir(firstLine)
 
 
 """CREACIÓN DE LA FILA DE PEONES"""
@@ -57,4 +57,4 @@ quadLineSquare = doubleLineSquare.up(doubleLineSquare)
 
 
 # Imprimimos
-draw(quadLineSquare)
+draw(lineFiguresWhite)
