@@ -88,9 +88,12 @@ class Picture:
     #Limite
     totalCaracteres = len(fondo) * len(fondo[0])
     aux = 0
-    for i in fondo:
-      for j in fondo[i]:
+    for i in len(fondo):
+      for j in len(fondo[i]):
         #En vez de SUBSTRING de java se usara SLICING de python
+        charFondo[aux] = fondo[i][j:j+1]
+        charFrontal[aux] = frontal[i][j:j+1]
+        ++aux
 
 
     return Picture(None)
