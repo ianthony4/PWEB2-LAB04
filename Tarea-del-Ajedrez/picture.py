@@ -52,13 +52,18 @@ class Picture:
       selfNegative.append(line) #Agregando cada linea a la imagen
     return Picture(selfNegative)
 
+  #Por probar
   def join(self, p):
     """ Devuelve una nueva figura poniendo la figura del argumento 
         al lado derecho de la figura actual """
     laImagen = self.img #Esta es la imagen original (izquierda)
     laImagenAdicional = p.img #Esta es la imagen que se añadira (derecha)
     selfJoin = [] # El resultado
-    
+    #Ahora se usa ZIP, combinar elementos en secuciencia (TUPLAS)
+    for a, b in zip(laImagen, laImagenAdicional): #zip
+      selfJoin.append(a + b)
+    return Picture(selfJoin)
+
     return Picture(None)
   
   #Funciona
