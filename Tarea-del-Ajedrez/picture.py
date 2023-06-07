@@ -82,12 +82,16 @@ class Picture:
     selfUnder = []
     fondo = self.img
     frontal = p.img
+    #Lista de caracteres individuales
+    charFondo = []
+    charFrontal = []
     #Limite
     totalCaracteres = len(fondo) * len(fondo[0])
     aux = 0
     for i in fondo:
       for j in fondo[i]:
         #En vez de SUBSTRING de java se usara SLICING de python
+
 
     return Picture(None)
   
