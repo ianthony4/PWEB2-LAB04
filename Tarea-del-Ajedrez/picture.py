@@ -52,7 +52,7 @@ class Picture:
       selfNegative.append(line) #Agregando cada linea a la imagen
     return Picture(selfNegative)
 
-  #Por probar
+  #Funciona
   def join(self, p):
     """ Devuelve una nueva figura poniendo la figura del argumento 
         al lado derecho de la figura actual """
