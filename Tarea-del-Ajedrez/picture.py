@@ -103,7 +103,13 @@ class Picture:
     #   colocamos el elemento del fondo en ese mismo indice en la linea
     #   caso contrario, agregamos ese elemento del frontal en la linea
     #2. Se uso MODULOS para controlar las lineas y agragerlas como elemento en el nuevo arreglo
-
+    for i in range(totalCaracteres):
+      if charFrontal[i] == " ":
+        if(i + 1)% len(fondo) != 0:
+          line = line + charFondo[i]
+        else:
+          line = line + charFondo[i]
+          selfUnder.append(line)
     return Picture(None)
   
   #Funciona
