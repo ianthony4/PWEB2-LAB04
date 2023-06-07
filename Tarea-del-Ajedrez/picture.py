@@ -158,6 +158,15 @@ class Picture:
     elementos = len(laImagen)
     #Linea aux
     line = ""
-    
-    return Picture(None)
+    #Basicamente este ciclo recorre todas las lineas
+    #De esa forma extraemos caracter por caracter y lo colocamos en la nueva imagen
+    for i in range(elementosLinea):
+      for j in range(elementos):
+        line += laImagen[j][i : i+1 ] #Usando slicing
+    #Agregamos la linea
+    selfRotate.append(line)
+    #Reiniciamos la linea
+    line = ""
+
+    return Picture(selfRotate)
 
