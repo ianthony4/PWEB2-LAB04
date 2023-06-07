@@ -79,6 +79,13 @@ class Picture:
     """ Devuelve una nueva figura poniendo la figura p sobre la
         figura actual """
     #Convirtiendo under.java en una funcion pero adapatada a python
+    selfUnder = []
+    fondo = self.img
+    frontal = p.img
+    #Limite
+    totalCaracteres = len(fondo) * len(fondo[0])
+    aux = 0
+    
     return Picture(None)
   
   #Funciona
