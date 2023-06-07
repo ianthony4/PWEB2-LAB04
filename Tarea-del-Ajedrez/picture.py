@@ -110,6 +110,14 @@ class Picture:
         else:
           line = line + charFondo[i]
           selfUnder.append(line)
+          line = ""# Reiniciando Line
+      else:
+        if(i + 1)% len(fondo) != 0:
+          line = line + charFrontal[i]
+        else:
+          line = line + charFrontal[i]
+          selfUnder.append(line)
+          line = "" #Reiniciando line
     return Picture(None)
   
   #Funciona
