@@ -7,3 +7,7 @@ moduloBase = square.negative().join(square)
 tira1Linea = moduloBase.horizontalRepeat(4)
 #Tira de casilleros (2 lineas, linea de arriba invertida)
 tira2Linea = tira1Linea.up(tira1Linea.negative())
+#Salida
+output = tira2Linea.verticalRepeat(2)
+#Dibujar la salida
+draw(output)
