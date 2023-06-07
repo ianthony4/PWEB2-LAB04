@@ -183,7 +183,26 @@ public class underJAVA{
 
     //METODO ROTATE
     public static ArrayList<String> rotate(String[] laImagen){
-        return null;
+        //Resultado
+        ArrayList<String> resultado = new ArrayList<>();
+        //Considerando que la figura es igual de larga en cada linea
+        //Caso contrario, seria otro for EXTERIOR que modifique en cada iteracion esa longitud
+        int elementosLinea = laImagen[0].length();
+        //elementos (lineas) en el dibujo
+        int elementos = laImagen.length;
+        String line = "";
+        //Basicamente este ciclo recorre todos las lineas
+        //de esa forma extraemos caracter por caracter
+        for(int i = 0; i<elementosLinea;i++){
+            for(int j = 0; j<elementos;j++){
+                line += laImagen[j].substring(i, i+1);
+            }
+            //Agregamos esa linea
+            resultado.add(line);
+            //Reiniciamos la linea
+            line = "";
+        }
+        return resultado;
     }
     //Metodo que imprime el arraylist
     public static void imprimir(ArrayList<String> img) {
