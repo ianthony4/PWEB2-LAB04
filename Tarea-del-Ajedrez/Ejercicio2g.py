@@ -37,6 +37,15 @@ firstLine = imprimir(primeraLinea)
 
 
 """CREACIÓN DE LA FILA DE PEONES"""
+#Creando los 2 primeros peones con su casillero
+firstPawn = square.under(pawn)
+secondPawn = square.negative().under(pawn)
+#Pequeño modulo de los 2 peones
+modPawn = firstPawn.join(secondPawn)
+#Ahora la fila de peones (blancos)
+linePawn = modPawn.horizontalRepeat(4)
+
+
 
 # Imprimimos
 draw(firstLine)
