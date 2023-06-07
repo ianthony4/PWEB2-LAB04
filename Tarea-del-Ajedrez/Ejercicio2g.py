@@ -45,7 +45,16 @@ modPawn = firstPawn.join(secondPawn)
 #Ahora la fila de peones (blancos)
 linePawn = modPawn.horizontalRepeat(4)
 
+"""CREACION DE LOS CASILLEROS DE 3 X 8 (EJERCICIO 2-F)"""
+#Modulo basico
+twoSquare = square.negative().join(square)
+#fila entera
+lineSquare = twoSquare.horizontalRepeat(4)
+#fila doble
+doubleLineSquare = lineSquare.up(lineSquare.negative())
+#Resultado final (tambien se puede usar VERTICAL REPEAT)
+quadLineSquare = doubleLineSquare.up(doubleLineSquare)
 
 
 # Imprimimos
-draw(firstLine)
+draw(quadLineSquare)
