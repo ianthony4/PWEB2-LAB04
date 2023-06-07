@@ -64,6 +64,14 @@ lineFiguresBlack = lineFiguresWhite.negative()
 #linea de peones negras
 linePawnBlack = linePawnWhite.negative()
 
+""" CREACION DE LOS MODULOS ESTRUCTURALES (SOLO 3)"""
+# En esta parte se crearan los 2 bandos
+
+#Creacion de las BLANCAS
+whites = lineFiguresWhite.up(linePawnWhite)
+#Creacion de las NEGRAS
+blacks = linePawnBlack.up(lineFiguresBlack)
+#La estructura que va en medio es 'quadLineSquare' ya esta creada en la linea 57
 
 # Imprimimos
 draw(lineFiguresWhite)
