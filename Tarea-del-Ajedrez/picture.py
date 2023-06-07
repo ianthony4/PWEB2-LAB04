@@ -90,12 +90,12 @@ class Picture:
     totalCaracteres = len(fondo) * len(fondo[0])
     aux = 0
     #Este ciclo almacena lo indicado usando 'SLICING [x:y]' para cada linea
-    for i in len(fondo):
-      for j in len(fondo[i]):
+    for i in range(len(fondo)):
+      for j in range(len(fondo[i])):
         #En vez de SUBSTRING de java se usara SLICING de python
         charFondo[aux] = fondo[i][j:j+1]
         charFrontal[aux] = frontal[i][j:j+1]
-        ++aux
+        aux += 1
     
     #Representamos una linea
     line = ""
