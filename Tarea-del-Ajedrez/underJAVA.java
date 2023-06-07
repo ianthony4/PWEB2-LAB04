@@ -180,6 +180,11 @@ public class underJAVA{
         }
         return resultado;
     }
+
+    //METODO ROTATE
+    public static ArrayList<String> rotate(String[] laImagen){
+        return null;
+    }
     //Metodo que imprime el arraylist
     public static void imprimir(ArrayList<String> img) {
         for (String linea : img) {
