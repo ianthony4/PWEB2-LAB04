@@ -43,7 +43,7 @@ secondPawn = square.negative().under(pawn)
 #Pequeño modulo de los 2 peones
 modPawn = firstPawn.join(secondPawn)
 #Ahora la fila de peones (blancos)
-linePawn = modPawn.horizontalRepeat(4)
+linePawnWhite = modPawn.horizontalRepeat(4)
 
 """CREACION DE LOS CASILLEROS DE 3 X 8 (EJERCICIO 2-F)"""
 """Tambien existe la posibilidad de importarlo desde la clase Ejercicio 2F"""
@@ -58,6 +58,11 @@ quadLineSquare = doubleLineSquare.up(doubleLineSquare)
 
 """CREACION DE MEJORES LINEAS ESPECIFICAS"""
 # Aqui identificaremos y definiremos que lineas son negras y que lineas son blancas con las variables ya creadas
+
+#linea de figuras negras
+lineFiguresBlack = lineFiguresWhite.negative()
+#linea de peones negras
+linePawnBlack = linePawnWhite.negative()
 
 
 # Imprimimos
