@@ -77,5 +77,6 @@ blacks = linePawnBlack.up(lineFiguresBlack)
 
 tablero = whites.up(quadLineSquare).up(blacks) #blancas +  mitad  + negras
 
-# Imprimimos
-draw(lineFiguresWhite)
+""" IMPRESION """
+
+draw(tablero)
