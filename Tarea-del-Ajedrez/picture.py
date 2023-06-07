@@ -88,14 +88,14 @@ class Picture:
     charFrontal = []
     #Limite
     totalCaracteres = len(fondo) * len(fondo[0])
-    aux = 0
+    # aux = 0 (no necesario, remplazada por APPEND)
     #Este ciclo almacena lo indicado usando 'SLICING [x:y]' para cada linea
     for i in range(len(fondo)):
       for j in range(len(fondo[i])):
         #En vez de SUBSTRING de java se usara SLICING de python
-        charFondo[aux] = fondo[i][j:j+1]
-        charFrontal[aux] = frontal[i][j:j+1]
-        aux += 1
+        charFondo.append(fondo[i][j:j+1])
+        charFrontal.append(frontal[i][j:j+1])
+        # aux += 1 (APPEND lo remplaza)
     
     #Representamos una linea
     line = ""
@@ -111,7 +111,7 @@ class Picture:
         else:
           line = line + charFondo[i]
           selfUnder.append(line)
-          line = ""# Reiniciando Line
+          line = "" # Reiniciando Line
       else:
         if(i + 1)% len(fondo) != 0:
           line = line + charFrontal[i]
