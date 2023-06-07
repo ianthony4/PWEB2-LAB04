@@ -10,6 +10,8 @@ from chessPictures import *
 # draw(firstLine)
 """Lo anterior no funciono, debido a esto que decidimos trabajar FIGURA POR FIGURA para under"""
 
+"""CREACIÓN DE LA FILA DE FIGURAS (CON SU SQUARE)"""
+
 #Modulo de Figuras
 figuras = [rock,knight,bishop,queen,king,bishop,knight,rock]
 # Creacion de la primera linea
@@ -32,5 +34,9 @@ def imprimir(arr):
     return output
 #Recolectamos en una variable picture
 firstLine = imprimir(primeraLinea)
+
+
+"""CREACIÓN DE LA FILA DE PEONES"""
+
 # Imprimimos
 draw(firstLine)
