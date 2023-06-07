@@ -46,6 +46,7 @@ modPawn = firstPawn.join(secondPawn)
 linePawn = modPawn.horizontalRepeat(4)
 
 """CREACION DE LOS CASILLEROS DE 3 X 8 (EJERCICIO 2-F)"""
+"""Tambien existe la posibilidad de importarlo desde la clase Ejercicio 2F"""
 #Modulo basico
 twoSquare = square.negative().join(square)
 #fila entera
@@ -54,6 +55,9 @@ lineSquare = twoSquare.horizontalRepeat(4)
 doubleLineSquare = lineSquare.up(lineSquare.negative())
 #Resultado final (tambien se puede usar VERTICAL REPEAT)
 quadLineSquare = doubleLineSquare.up(doubleLineSquare)
+
+"""CREACION DE MEJORES LINEAS ESPECIFICAS"""
+# Aqui identificaremos y definiremos que lineas son negras y que lineas son blancas con las variables ya creadas
 
 
 # Imprimimos
