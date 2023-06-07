@@ -149,5 +149,10 @@ class Picture:
   def rotate(self):
     """Devuelve una figura rotada en 90 grados, puede ser en sentido horario
     o antihorario"""
+    laImagen = self.img
+    selfRotate = []
+    #Considerando que la figura es igual de larga en cada linea
+    #Caso contrario, seria otro for EXTERIOR que modifique en cada iteracion esa longitud
+    
     return Picture(None)
 
